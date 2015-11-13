@@ -94,7 +94,7 @@ static const int kStateKey;
                   animated:NO];
     
     self.scrollIndicatorInsets = self.contentInset;
-    [self layoutIfNeeded];
+    //[self layoutIfNeeded];
     
     [UIView commitAnimations];
 }
@@ -130,7 +130,7 @@ static const int kStateKey;
     self.contentInset = state.priorInset;
     self.scrollIndicatorInsets = state.priorScrollIndicatorInsets;
     self.pagingEnabled = state.priorPagingEnabled;
-	[self layoutIfNeeded];
+    //[self layoutIfNeeded];
     [UIView commitAnimations];
 }
 
